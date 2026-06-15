@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops for Sale — Products | Laptop Sales</title>
+    <meta name="description" content="Shop laptops for sale: gaming laptops, student laptops and professional notebooks. View specs, prices and quick-view details.">
+    <meta name="keywords" content="laptops for sale, buy laptops, gaming laptop, student laptop, professional laptop, laptop deals">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <h1>Laptop Sales</h1>
+        <p>Your Trusted Source for quality laptops</p>
+    </header>
+        <nav>
+           <ul>
+                <li><a href="HOME.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="About Us.html">About</a></li>
+                 <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Enquiry.html">Enquiry</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="products">
+                <h2>Our Products — Laptops for Students, Professionals & Gamers</h2>
+                <p>Explore our wide range of laptops from top brands. Find student-friendly notebooks, high-performance gaming laptops and reliable professional machines.</p>
+                <p>Prices, specifications and quick-view details help you compare models. If you need help, <a href="Contact.html">contact our support team</a>.</p>
+
+                <div class="tab-container">
+                    <div class="tabs">
+                        <button class="tab-button active" data-tab="overview">Overview</button>
+                        <button class="tab-button" data-tab="specs">Specifications</button>
+                        <button class="tab-button" data-tab="reviews">Reviews</button>
+                    </div>
+                    <div class="tab-panels">
+                        <div class="tab-panel active" id="overview">
+                            <p>Choose from lightweight students' laptops, all-purpose professionals' models, and high-performance gaming machines. Use the quick view buttons below to compare features instantly.</p>
+                        </div>
+                        <div class="tab-panel" id="specs">
+                            <ul>
+                                <li>Up to Intel Core i9 / AMD Ryzen 9 processors</li>
+                                <li>16GB - 32GB RAM options</li>
+                                <li>Fast NVMe storage and crisp 144Hz displays</li>
+                            </ul>
+                        </div>
+                        <div class="tab-panel" id="reviews">
+                            <p>Our customers praise the build quality, responsive support, and exceptional price-value for the latest laptop range. See the product quick view for highlighted features and recommendations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-controls">
+                    <input id="product-search" type="search" placeholder="Search products by name or description" aria-label="Search products">
+                    <select id="product-sort" aria-label="Sort products">
+                        <option value="default">Sort by</option>
+                        <option value="name-asc">Name A→Z</option>
+                        <option value="name-desc">Name Z→A</option>
+                        <option value="price-asc">Price Low→High</option>
+                        <option value="price-desc">Price High→Low</option>
+                    </select>
+                    <label for="product-currency" class="visually-hidden">Currency</label>
+                    <select id="product-currency" aria-label="Currency">
+                        <option value="USD">USD</option>
+                        <option value="ZAR">ZAR (Rands)</option>
+                    </select>
+                </div>
+
+                <div id="product-list" class="product-grid" aria-live="polite">
+                    <!-- Products will be rendered here by JavaScript -->
+                </div>
+
+                <p>Contact us for personalized recommendations and support.</p>
+
+            </section>
+
+            <div id="product-modal" class="modal hidden" aria-hidden="true">
+                <div class="modal-content">
+                    <button class="modal-close" aria-label="Close product details">&times;</button>
+                    <h3 id="modal-title">Product Quick View</h3>
+                    <p id="modal-description"></p>
+                    <ul class="modal-specs">
+                        <li>Flexible financing available</li>
+                        <li>Free shipping and support</li>
+                        <li>Limited-time warranty included</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; St10479992 Laptop Sales Website.</p>
+        </footer>
+        <script src="Java/site.js"></script>
+</body>   
+</html> 

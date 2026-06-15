@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Laptop Sales Johannesburg</title>
+    <meta name="description" content="Contact Laptop Sales for product enquiries, support, and store location in Braamfontein, Johannesburg. Email, phone and map available.">
+    <meta name="keywords" content="contact laptop sales, laptop support Johannesburg, store location">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+    <header>
+        <h1>Laptop Sales</h1>
+        <p>Your Trusted Source for quality laptops</p>
+    </header>
+        <nav>
+            <ul>
+                <li><a href="HOME.html">Home</a></li>
+                <li><a href="Product.html">Products</a></li>
+                <li><a href="About Us.html">About</a></li>
+                 <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Enquiry.html">Enquiry</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="contact">
+                <h2>Contact Us — Support & Enquiries</h2>
+                <p>Get in touch for product enquiries, warranty questions, or personalised laptop recommendations. Our support team is ready to help.</p>
+                <div class="accordion">
+                    <button class="accordion-button" type="button">Email & Customer Support</button>
+                    <div class="accordion-panel">
+                        <p>Email: <strong><a href="mailto:peacechogo14@gmail.com">PEACECHOGO14@GMAIL.COM</a></strong></p>
+                        <p>Support is available Monday through Friday from 9am to 6pm.</p>
+                        <p>Instagram: <a href="https://www.instagram.com/LaptopSalesJHB" target="_blank" rel="noopener noreferrer">@LaptopSalesJHB</a></p>
+                    </div>
+                    <button class="accordion-button" type="button">Phone & Address</button>
+                    <div class="accordion-panel">
+                        <p>Phone: <strong>+27 817123163</strong></p>
+                        <p>WhatsApp: <a href="https://wa.me/27817123163" target="_blank" rel="noopener noreferrer">+27 81 712 3163</a></p>
+                            <p>Address: <strong>23 Jorissen Street, Braamfontein, Johannesburg, South Africa</strong> — <a href="https://www.google.com/maps/search/?api=1&query=23+Jorissen+Street,+Braamfontein,+Johannesburg,+South+Africa" target="_blank" rel="noopener noreferrer">See on map</a></p>
+                    </div>
+                </div>
+                <!-- Contact form inserted below -->
+                <section id="contact-form-section">
+                    <h3>Send Us a Message</h3>
+                    <form id="contact-form" method="post" action="https://example.com/send-contact" novalidate>
+                        <div id="contact-errors" class="form-errors" aria-live="polite"></div>
+
+                        <label for="c-name">Full name</label>
+                        <input id="c-name" name="name" type="text" required minlength="2">
+
+                        <label for="c-email">Email</label>
+                        <input id="c-email" name="email" type="email" required>
+
+                        <label for="c-phone">Phone</label>
+                        <input id="c-phone" name="phone" type="tel" pattern="\+?\d{7,15}">
+
+                        <label for="c-type">Message type</label>
+                        <select id="c-type" name="messageType" required>
+                            <option value="question">Question</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="support">Support</option>
+                            <option value="other">Other</option>
+                        </select>
+
+                        <label for="c-message">Message</label>
+                        <textarea id="c-message" name="message" rows="6" maxlength="2000" required></textarea>
+
+                        <label class="checkbox"><input id="c-consent" name="consent" type="checkbox" required> I agree to be contacted about this enquiry.</label>
+
+                        <div class="form-actions">
+                            <button id="c-send-email" type="button">Send as Email</button>
+                            <button type="submit">Submit </button>
+                        </div>
+                    </form>
+                    <p class="muted">Emails will be addressed to <strong>peacechogo14@gmail.com</strong> when using the 'Send as Email' button.</p>
+                    <div id="contact-response" class="form-response" aria-live="polite"></div>
+                </section>
+
+                <div id="map" class="map-container" role="application" aria-label="Store location map"></div>
+                <p>Looking for a laptop? <a href="Product.html">Browse our products</a> or call us to book a demo.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; St10479992 Laptop Sales Website.</p>
+        </footer>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="Java/site.js"></script>
+</body>   
+</html> 

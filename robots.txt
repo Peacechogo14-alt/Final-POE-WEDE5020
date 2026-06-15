@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# Sitemap location — replace example.com with your real domain
+Sitemap: https://example.com/sitemap.xml

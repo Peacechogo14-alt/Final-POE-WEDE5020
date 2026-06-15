@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry — Laptop Sales Johannesburg</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <meta name="description" content="Enquire about products, services, volunteering or sponsorship at Laptop Sales Johannesburg.">
+</head>
+<body>
+    <header>
+        <h1>Laptop Sales — Enquiry</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="HOME.html">Home</a></li>
+            <li><a href="Product.html">Products</a></li>
+            <li><a href="About Us.html">About</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="enquiry">
+            <h2>Make an Enquiry</h2>
+            <p>Use this form to enquire about products, services, volunteering or sponsorship opportunities. We'll validate your input and show cost/availability where applicable.</p>
+
+            <form id="enquiry-form" method="post" action="https://example.com/process-enquiry" novalidate>
+                <div id="enquiry-errors" class="form-errors" aria-live="polite"></div>
+
+                <label for="e-name">Full name</label>
+                <input id="e-name" name="name" type="text" required minlength="2" placeholder="Your full name">
+
+                <label for="e-email">Email</label>
+                <input id="e-email" name="email" type="email" required placeholder="you@example.com">
+
+                <label for="e-phone">Phone</label>
+                <input id="e-phone" name="phone" type="tel" pattern="\+?\d{7,15}" placeholder="+2781...">
+
+                <label for="e-type">Enquiry type</label>
+                <select id="e-type" name="enquiryType" required>
+                    <option value="product">Product / Availability</option>
+                    <option value="service">Service / Repairs</option>
+                    <option value="volunteer">Volunteer</option>
+                    <option value="sponsor">Sponsor</option>
+                </select>
+
+                <div id="product-fields" class="conditional-fields">
+                    <label for="e-product">Product</label>
+                    <select id="e-product" name="product">
+                        <option value="1">Brand A - ModernNova</option>
+                        <option value="2">Brand B - ModernGamer</option>
+                        <option value="3">Brand C - ModernPro</option>
+                    </select>
+
+                    <label for="e-quantity">Quantity</label>
+                    <input id="e-quantity" name="quantity" type="number" min="1" value="1">
+                </div>
+
+                <label for="e-date">Preferred date</label>
+                <input id="e-date" name="preferredDate" type="date">
+
+                <label for="e-message">Details</label>
+                <textarea id="e-message" name="message" rows="5" maxlength="1000" placeholder="Any additional details (1000 chars max)"></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+
+            <div id="enquiry-response" class="form-response" aria-live="polite"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Laptop Sales</p>
+    </footer>
+    <script src="Java/site.js"></script>
+</body>
+</html>
